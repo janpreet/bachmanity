@@ -1,0 +1,13 @@
+{
+  "name": "bachmanity",
+  "owner": {
+    "name": "Janpreet Singh"
+  },
+  "plugins": [
+    {
+      "name": "bachmanity",
+      "source": "./",
+      "description": "Makes Claude Code talk like the cast of Silicon Valley. Ten character skills: Erlich, Gilfoyle, Dinesh, Richard, Russ, Jian-Yang, Big Head, Monica, Jared and Peter Gregory. The work stays correct, the commentary gets in character."
+    }
+  ]
+}
