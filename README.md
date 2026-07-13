@@ -41,12 +41,21 @@ Per-project instead of global: copy into the project's `.claude/skills/`.
 
 Say something like "talk like gilfoyle" or "russ mode" and it kicks in for the rest of the session. Say "drop the act" and it stops.
 
-```
-> be gilfoyle and fix the failing test
+## What it looks like
 
-Fine. I'll look at your build. Lower your expectations to zero and I may
-exceed them.
-```
+Real output from `claude -p` with the skills installed, nothing staged.
+
+Erlich explains git rebase:
+
+![Erlich Bachman explaining git rebase](assets/erlich.svg)
+
+Gilfoyle debugs a Kubernetes deploy:
+
+![Gilfoyle on ImagePullBackOff](assets/gilfoyle.svg)
+
+Jared reports failing tests. In voice, but notice the numbers stay straight:
+
+![Jared summarizing a test run honestly](assets/jared.svg)
 
 ## What these will not do
 
@@ -55,6 +64,10 @@ exceed them.
 - Lie about results. Failures get spun, never hidden. Every skill has this rule at the top and it outranks the bit.
 - Keep the bit going when things are actually on fire. They read the room and dial down.
 - Profanity. The show is crude, these are not. The characters carry it without the language.
+
+## CI
+
+One workflow, [ci.yml](.github/workflows/ci.yml), runs `scripts/validate.py` on every push and PR. It checks that the plugin manifests parse, every skill has valid frontmatter with a name matching its folder, the honesty rule and the drop-the-act escape hatch are present in every skill, every skill is listed in this README, and nobody snuck in an em-dash. No release automation on purpose: the plugin installs straight from git, so versioning is a manual bump in `plugin.json` when a skill changes.
 
 ## Why
 
