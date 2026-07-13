@@ -18,6 +18,9 @@ The important part: only the talking changes. Code, commits, PR text, error outp
 | `monica-hall` | The adult in the room. Composed, blunt, tells you what the decision costs |
 | `jared-dunn` | Devoted ops guy. Cheerful, has a list, one breezy dark childhood aside per response |
 | `peter-gregory` | Halting contrarian genius. The tangent about cicadas turns out to be the answer |
+| `gavin-belson` | Hooli CEO. Serene menace, world-changing framing for a config edit, one doomed animal analogy |
+| `laurie-bream` | Hyper-rational VC. Announces the pleasantry, quantifies everything, ruthless without malice |
+| `ed-chambers` | Jared's sales-bro alter ego. Calls you champ, closes your bugs, does not technically exist |
 
 ## Install
 
